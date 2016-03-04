@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phoebevu.gorepresent">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CongressView"
+            android:label="@string/title_activity_congress_view"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.phoebevu.gorepresent.MainActivity" />
+        </activity>
+
+        <service android:name=".PhoneToWatchService" />
+        <service android:name=".PhoneListenerService"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".DetailView"
+            android:label="@string/title_activity_detail_view"
+            android:parentActivityName=".CongressView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.phoebevu.gorepresent.CongressView" />
+        </activity>
+        <activity
+            android:name=".DetailView2"
+            android:label="@string/title_activity_detail_view2"
+            android:parentActivityName=".CongressView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.phoebevu.gorepresent.CongressView" />
+        </activity>
+        <activity
+            android:name=".DetailView3"
+            android:label="@string/title_activity_detail_view3"
+            android:parentActivityName=".CongressView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.phoebevu.gorepresent.CongressView" />
+        </activity>
+    </application>
+
+</manifest>
