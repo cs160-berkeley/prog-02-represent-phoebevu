@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Go Represent</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_congressional_view">congressional_view</string>
+    <string name="title_activity_congress_view">CongressView</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_detail_view">DetailView</string>
+    <string name="title_activity_detail_view2">DetailView2</string>
+    <string name="title_activity_detail_view3">DetailView3</string>
+    <string name="title_activity_map_view">MapView</string>
+    <string name="title_activity_gps">GPSActivity</string>
+    <string name="title_activity_congress_list">CongressList</string>
+    <string-array name="tabs">
+        <item>Bills</item>
+        <item>Committees</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">Test</string>
+</resources>

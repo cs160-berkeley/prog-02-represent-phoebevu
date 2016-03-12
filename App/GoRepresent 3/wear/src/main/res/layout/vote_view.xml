@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State: California"
+        android:id="@+id/state"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/county"
+        android:layout_marginTop="3dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="County: Orange"
+        android:id="@+id/county"
+        android:layout_below="@+id/state"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="3dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obama: xx% Vote"
+        android:id="@+id/ovote"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_below="@+id/county"
+        android:layout_alignEnd="@+id/state"
+        android:layout_marginTop="3dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Romney: xx% Vote"
+        android:id="@+id/rvote"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_below="@+id/ovote"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:typeface="serif" />
+</LinearLayout>
